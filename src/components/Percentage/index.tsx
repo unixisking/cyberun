@@ -33,7 +33,7 @@ const PercentageInput = ({ value, onChange, label }: IPercentageInputProps) => {
       label={label}
       value={value}
       type="number"
-      inputProps={{ min: 0, max: 100, defaultValue: 0 }}
+      inputProps={{ min: 0, max: 100 }}
       onChange={onChange}
       InputProps={{
         endAdornment: (
