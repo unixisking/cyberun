@@ -10,7 +10,7 @@ import { ErrorObject } from 'ajv'
 import { useState, useEffect } from 'react'
 
 const StyledGroup = styled.div`
-  background-color: #f0f0f0; // Set your desired background color here
+  background-color: #f0f0f0;
   padding: 20px;
   border-radius: 8px;
 `
@@ -81,6 +81,7 @@ export default function CountriesPercentages() {
         />
       </StyledGroup>
       <Button
+        disabled={percentageError.length > 0}
         sx={{ marginTop: '10px' }}
         variant="contained"
         onClick={() =>
